@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { data } from './data.jsx';
 import { runDvd } from './dvd.jsx';
 import { PowerGlitch } from 'powerglitch';
@@ -65,17 +67,34 @@ const Header = () => {
           decoding="async"
           alt="Headshot"
         />
-        Aiden Bai
+        aiden bai
       </h4>
       <p>
-        Right now, I'm building{' '}
-        <Link href="https://million.dev">Million</Link>{' '}
-        <Link href="https://www.ycombinator.com/companies/million-js">
-          (YC W24)
-        </Link>
-        : An IDE extension that makes your site faster.
+        i'm building <Link href="https://same.new">Same</Link> to
+        allow anyone to build fullstack web apps by prompting.
       </p>
       <p>
+        if you want to work with me, check out our{' '}
+        <Link href="https://same.inc">about us</Link>.
+      </p>
+      <p>
+        my background is in growing developer tools. previously,
+        i created{' '}
+        <Link href="https://github.com/aidenybai/million">
+          Million.js
+        </Link>{' '}
+        when i was 16{' '}
+        <Link href="https://www.youtube.com/watch?v=VkezQMb1DHw">
+          (video)
+        </Link>{' '}
+        and later made{' '}
+        <Link href="https://github.com/aidenybai/react-scan">
+          React Scan
+        </Link>
+        . these projects have a combined total of 40k+ stars on
+        github.
+      </p>
+      {/* <p>
         I used to <strike>skip lectures</strike> go to the&nbsp;
         <Link href="https://www.uw.edu/">
           University of Washington
@@ -92,29 +111,23 @@ const Header = () => {
           Stardew Valley
         </Link>
         .
+      </p> */}
+      <p>
+        connect with me on{' '}
+        <Link href="https://x.com/aidenybai">twitter</Link>,{' '}
+        <Link href="https://github.com/aidenybai">github</Link>,{' '}
+        <Link href="https://www.linkedin.com/in/aidenybai/">
+          linkedin
+        </Link>
+        , or at{' '}
+        <Link href="mailto:aiden@million.dev">aiden@million.dev</Link>!
       </p>
-      <p class="italic">
+      {/* <p class="italic">
         Want to reach out?{' '}
         <Link href="mailto:aiden.bai05@gmail.com">
           Say hello!
         </Link>
-      </p>
-      <p class="flex flex-wrap gap-10">
-        <span class="animate-pulse motion-reduce:animate-none">
-          ◕ ◡ ◕ っ
-        </span>
-        <span>
-          <Link href="https://github.com/aidenybai">GitHub</Link>{' '}
-          ·{' '}
-          <Link href="https://twitter.com/aidenybai">
-            Twitter
-          </Link>{' '}
-          ·{' '}
-          <Link href="https://youtube.com/@aidenbai">
-            YouTube
-          </Link>
-        </span>
-      </p>
+      </p> */}
     </header>
   );
 };
@@ -187,13 +200,13 @@ const Footer = () => {
         </Link>
         !
       </p> */}
-      {!REDUCE_MOTION ? (
+      {/* {!REDUCE_MOTION ? (
         <p class="italic text-gray-400">
           P.S. Try ejecting the page!
         </p>
       ) : (
         <p></p>
-      )}
+      )} */}
     </footer>
   );
 };
@@ -279,7 +292,6 @@ const Content = () => {
       </div>
       <div class="mx-auto">
         <Header />
-        <Stats />
         <Footer />
       </div>
     </div>
