@@ -15,6 +15,7 @@
     "react-dom": "^19.2.1"
   },
   "devDependencies": {
+    "@react-grab/visual-edit": "^0.0.89",
     "@tailwindcss/postcss": "^4.1.1",
     "@types/node": "^20.8.0",
     "@types/react": "^18.2.26",

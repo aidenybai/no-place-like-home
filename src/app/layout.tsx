@@ -40,17 +40,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {process.env.NODE_ENV === 'development' && (
-          <Script
-            src="//unpkg.com/react-grab/dist/index.global.js"
-            crossOrigin="anonymous"
-            strategy="beforeInteractive"
-          />
-        )}
+        <Script
+          src="//unpkg.com/react-grab/dist/index.global.js"
+          crossOrigin="anonymous"
+          strategy="beforeInteractive"
+        />
+            <Script
+              src="//unpkg.com/@react-grab/visual-edit/dist/client.global.js"
+              strategy="lazyOnload"
+            />
       </head>
-      <body
-        className={`${geistMono.className} antialiased tracking-tighter`}
-      >
+      <body className={`${geistMono.className} antialiased tracking-tighter`}>
         {children}
       </body>
     </html>
