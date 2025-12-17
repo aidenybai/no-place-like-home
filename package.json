@@ -21,6 +21,7 @@
     "eslint": "^8.50.0",
     "eslint-config-next": "^13.5.6",
     "postcss": "^8.4.30",
+    "react-grab": "^0.0.89",
     "tailwindcss": "^4.1.17",
     "typescript": "^5.2.2"
   }
