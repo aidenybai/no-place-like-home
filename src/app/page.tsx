@@ -1,8 +1,12 @@
+'use client';
+
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import signature from '@/public/sig.svg';
 
 export default function Home() {
+  const [isPastOpen, setIsPastOpen] = useState(false);
   return (
     <main className="flex flex-col gap-2 max-w-[600px] px-10 py-10 leading-relaxed text-base">
       <h1 className="text-lg font-semibold">Aiden Bai</h1>
@@ -26,8 +30,8 @@ export default function Home() {
       </p>
 
       <p>
-        i care a lot about speed. in order to allow anyone to access great
-        technology, you need to make it fast. in fact, most of my work (old and
+        i care a great deal about speed. in order to allow anyone to access great
+        technology, you need to make it fast. most of my work (old and
         new) surrounds this.
       </p>
 
@@ -56,43 +60,52 @@ export default function Home() {
         . these projects have a combined total of 40k+ stars on github.
       </p>
 
-      <p className="font-semibold">past</p>
-      <p>
-        i went to University of Washington in Seattle for 3 months. then i
-        dropped out to do{' '}
-        <a
-          href="https://x.com/aidenybai/status/1875789219815420079"
-          className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
-        >
-          YC
-        </a>{' '}
-        startups.
-      </p>
+      <button
+        onClick={() => setIsPastOpen(!isPastOpen)}
+        className="font-semibold text-left cursor-pointer transition-opacity bg-neutral-100 hover:bg-neutral-200 px-2 py-1 rounded-md"
+      >
+        past {isPastOpen ? '▾' : '▸'}
+      </button>
+      {isPastOpen && (
+        <>
+          <p>
+            i went to University of Washington in Seattle for 3 months. then i
+            dropped out to do{' '}
+            <a
+              href="https://x.com/aidenybai/status/1875789219815420079"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              YC
+            </a>{' '}
+            startups.
+          </p>
 
-      <p>
-        in high school, i did science fair{' '}
-        <a
-          href="https://www.societyforscience.org/press-release/regeneron-isef-full-awards-2022/#:~:text=SOFT037"
-          className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
-        >
-          (ISEF &apos;22
-        </a>
-        ,{' '}
-        <a
-          href="https://www.societyforscience.org/press-release/2021-regeneron-isef-grand-awards/#:~:text=SOFT031"
-          className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
-        >
-          &apos;21)
-        </a>{' '}
-        and won some awards{' '}
-        <a
-          href="https://www.sigapp.org/sac/sac2023/#:~:text=Aiden%20Bai"
-          className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
-        >
-          (ACM SAC &apos;23 Best Paper)
-        </a>
-        .
-      </p>
+          <p>
+            in high school, i did science fair{' '}
+            <a
+              href="https://www.societyforscience.org/press-release/regeneron-isef-full-awards-2022/#:~:text=SOFT037"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              (ISEF &apos;22
+            </a>
+            ,{' '}
+            <a
+              href="https://www.societyforscience.org/press-release/2021-regeneron-isef-grand-awards/#:~:text=SOFT031"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              &apos;21)
+            </a>{' '}
+            and won some awards{' '}
+            <a
+              href="https://www.sigapp.org/sac/sac2023/#:~:text=Aiden%20Bai"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              (ACM SAC &apos;23 Best Paper)
+            </a>
+            .
+          </p>
+        </>
+      )}
 
       <div className="border-l border-neutral-900 pl-3">
         <p>
