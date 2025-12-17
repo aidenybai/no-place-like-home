@@ -4,6 +4,7 @@ import signature from '@/public/sig.webp';
 import IconArrowTopRight from '@/components/icon-arrow-top-right';
 import PastSection from '@/components/past-section';
 import PolaroidStack from '@/components/polaroid-stack';
+import AmiTooltip from '@/components/ami-tooltip';
 
 export default function Home() {
   return (
@@ -23,15 +24,16 @@ export default function Home() {
           href="https://react-grab.com"
           className="underline decoration-stone-500 underline-offset-[2.5px] hover:decoration-stone-400"
         >
-          React Grab
-      </a>{' '}
-        to make faster coding agents for frontend development.
+          React Grab<AmiTooltip />
+        </a>{' '}
+        to make faster coding agents for UI.
       </p>
 
       <p>
-        i care a great deal about <span className="shimmer font-medium">speed</span>. in order to allow anyone to access
-        great technology, you need to make it fast. most of my work (old and
-        new) revolves around this.
+        i care a great deal about{' '}
+        <span className="shimmer font-medium">speed</span>. in order to allow
+        anyone to access great technology, you need to make it fast. most of my
+        work (old and new) revolves around this.
       </p>
 
       <p>
