@@ -66,7 +66,7 @@ export default function PastSection() {
             >
               Million Lint
             </a>
-            . we grew to 400k+ users + million of $ in run rate.
+            . we grew to 400k+ users and millions of $ in revenue.
           </p>
         </div>
       )}
