@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import './globals.css';
-import { STIX_Two_Text } from 'next/font/google';
+import { Geist_Mono } from 'next/font/google';
 
 export const metadata: Metadata = {
   title: 'Aiden Bai',
   description: '',
 };
 
-const stixTwoText = STIX_Two_Text({
+const geistMono = Geist_Mono({
   subsets: ['latin'],
-  weight: ['400', '700'],
+  variable: '--font-geist-mono',
 });
 
 export default function RootLayout({
@@ -29,7 +29,9 @@ export default function RootLayout({
           />
         )}
       </head>
-      <body className={`${stixTwoText.className} antialiased tracking-[-0.02em]`}>
+      <body
+        className={`${geistMono.className} antialiased tracking-tighter`}
+      >
         {children}
       </body>
     </html>

@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 
-html, body {
-  font-family: var(--font-ibm-plex-serif);
+::selection {
+  background-color: #00000019;
+  color: #000000;
 }
