@@ -35,7 +35,7 @@ export default function PolaroidStack() {
 
   return (
     <Tooltip.Provider delay={0}>
-      <div className="my-4 overflow-hidden">
+      <div className="mb-4 overflow-hidden">
         <div className="relative h-40 sm:h-56 w-[520px] pt-16 scale-[0.55] sm:scale-100 origin-top-left">
           {polaroids.map((polaroid, index) => (
             <Tooltip.Root key={index}>

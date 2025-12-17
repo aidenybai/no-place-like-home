@@ -24,14 +24,14 @@ export default function Home() {
           className="underline decoration-stone-500 underline-offset-[2.5px] hover:decoration-stone-400"
         >
           React Grab
-        </a>{' '}
+      </a>{' '}
         to make faster coding agents for frontend development.
       </p>
 
       <p>
         i care a great deal about <span className="shimmer font-medium">speed</span>. in order to allow anyone to access
         great technology, you need to make it fast. most of my work (old and
-        new) surrounds this.
+        new) revolves around this.
       </p>
 
       <p>
