@@ -1,0 +1,80 @@
+import Link from 'next/link';
+import IconArrowTopRight from '../../components/icon-arrow-top-right';
+
+const posts = [
+  {
+    url: 'https://www.react-grab.com/blog/bets',
+    title: 'Some bets',
+    date: '2025-11-29',
+    external: true,
+  },
+  {
+    url: 'https://www.react-grab.com/blog/intro',
+    title: 'I made your coding agent 3× faster at frontend',
+    date: '2025-11-24',
+    external: true,
+  },
+];
+
+export default function Blog() {
+  // Group posts by year
+  const postsByYear = posts.reduce((acc, post) => {
+    const year = post.date.split('-')[0];
+    if (!acc[year]) {
+      acc[year] = [];
+    }
+    acc[year].push(post);
+    return acc;
+  }, {} as Record<string, typeof posts>);
+
+  // Sort years descending and posts within each year by date descending
+  const years = Object.keys(postsByYear).sort((a, b) => Number(b) - Number(a));
+  years.forEach((year) => {
+    postsByYear[year].sort((a, b) => b.date.localeCompare(a.date));
+  });
+
+  return (
+    <main className="flex flex-col gap-2 max-w-[600px] px-10 py-10 leading-relaxed text-base">
+      <p>
+        <Link
+          href="/"
+          className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+        >
+          ← Back to home
+        </Link>
+      </p>
+
+      <h1 className="text-lg font-bold mt-4">Blog</h1>
+
+      <div className="flex flex-col mt-6 gap-3">
+        {years.map((year) => (
+          <div key={year} className="flex flex-col gap-2">
+            {postsByYear[year].map((post, index) => (
+              <div
+                key={post.url}
+                className="flex items-center gap-4"
+              >
+                {index === 0 ? (
+                  <span className="text-neutral-500 text-sm min-w-12">
+                    {year}
+                  </span>
+                ) : (
+                  <span className="text-neutral-500 text-sm min-w-12" />
+                )}
+                <a
+                  href={post.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400 inline-flex items-center gap-1"
+                >
+                  {post.title}
+                  <IconArrowTopRight className="w-3 h-3" />
+                </a>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+    </main>
+  );
+}
