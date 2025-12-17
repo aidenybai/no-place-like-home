@@ -14,10 +14,15 @@ const posts = [
     date: '2025-11-24',
     external: true,
   },
+  {
+    url: 'https://old.million.dev/blog/virtual-dom',
+    title: 'Virtual DOM: Back in Block',
+    date: '2023-05-01',
+    external: true,
+  },
 ];
 
 export default function Blog() {
-  // Group posts by year
   const postsByYear = posts.reduce((acc, post) => {
     const year = post.date.split('-')[0];
     if (!acc[year]) {
@@ -27,7 +32,6 @@ export default function Blog() {
     return acc;
   }, {} as Record<string, typeof posts>);
 
-  // Sort years descending and posts within each year by date descending
   const years = Object.keys(postsByYear).sort((a, b) => Number(b) - Number(a));
   years.forEach((year) => {
     postsByYear[year].sort((a, b) => b.date.localeCompare(a.date));
@@ -65,10 +69,10 @@ export default function Blog() {
                   href={post.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400 inline-flex items-center gap-1"
+                  className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
                 >
                   {post.title}
-                  <IconArrowTopRight className="w-3 h-3" />
+                  <IconArrowTopRight className="w-3 h-3 inline-block ml-1 align-baseline" />
                 </a>
               </div>
             ))}

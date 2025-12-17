@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import signature from '@/public/sig.svg';
+import IconArrowTopRight from '@/components/icon-arrow-top-right';
 
 export default function Home() {
   const [isPastOpen, setIsPastOpen] = useState(false);
@@ -30,8 +31,8 @@ export default function Home() {
       </p>
 
       <p>
-        i care a great deal about speed. in order to allow anyone to access great
-        technology, you need to make it fast. most of my work (old and
+        i care a great deal about speed. in order to allow anyone to access
+        great technology, you need to make it fast. most of my work (old and
         new) surrounds this.
       </p>
 
@@ -48,7 +49,9 @@ export default function Home() {
           href="https://www.youtube.com/watch?v=VkezQMb1DHw"
           className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
         >
-          (Fireship video)
+          (Fireship video{' '}
+          <IconArrowTopRight className="w-3 h-3 inline-block ml-1 align-baseline" />
+          )
         </a>{' '}
         and later made{' '}
         <a
@@ -76,8 +79,7 @@ export default function Home() {
               className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
             >
               YC
-            </a>{' '}
-            startups.
+            </a>
           </p>
 
           <p>
