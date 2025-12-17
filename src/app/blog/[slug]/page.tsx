@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import signature from '@/public/sig.svg';
+import signature from '@/public/sig.webp';
 
 const posts: Record<
   string,

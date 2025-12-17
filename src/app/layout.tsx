@@ -6,6 +6,25 @@ import { Geist_Mono } from 'next/font/google';
 export const metadata: Metadata = {
   title: 'Aiden Bai',
   description: '',
+  icons: {
+    icon: '/aiden-logo.webp',
+    apple: '/aiden-logo.webp',
+  },
+  openGraph: {
+    title: 'Aiden Bai',
+    images: [
+      {
+        url: '/aiden-logo.webp',
+        width: 400,
+        height: 400,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Aiden Bai',
+    images: ['/aiden-logo.webp'],
+  },
 };
 
 const geistMono = Geist_Mono({
