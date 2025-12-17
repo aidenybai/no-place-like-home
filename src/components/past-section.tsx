@@ -48,7 +48,7 @@ export default function PastSection() {
             >
               (ACM SAC &apos;23 Best Paper)
             </a>
-            . i also was a part of <a href="https://hackclub.com/">Hack Club</a>, where i found my home away from home.
+            . i also was a part of <a className="underline decoration-stone-500 underline-offset-[2.5px] hover:decoration-stone-400" href="https://hackclub.com/">Hack Club</a>, where i found my home away from home.
           </p>
 
           <p>

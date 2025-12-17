@@ -7,7 +7,7 @@ import PolaroidStack from '@/components/polaroid-stack';
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-2 max-w-[600px] px-10 py-10 leading-relaxed text-base">
+    <main className="flex flex-col gap-2 max-w-[600px] p-5 pt-7 lg:p-10 leading-relaxed text-base">
       <h1 className="text-lg font-semibold">Aiden Bai</h1>
 
       <p>
@@ -29,7 +29,7 @@ export default function Home() {
       </p>
 
       <p>
-        i care a great deal about speed. in order to allow anyone to access
+        i care a great deal about <span className="shimmer font-medium">speed</span>. in order to allow anyone to access
         great technology, you need to make it fast. most of my work (old and
         new) surrounds this.
       </p>
