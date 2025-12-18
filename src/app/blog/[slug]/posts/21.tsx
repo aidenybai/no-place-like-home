@@ -3,7 +3,7 @@ import plane from '@/public/plane.webp';
 import type { BlogPost } from '../page';
 
 export const post21: BlogPost = {
-  title: 'Reflecting on 20',
+  title: 'Goodbye 20',
   date: '2026-01-05',
   description:
     'Reflections on turning 21, identity beyond age, and growing into yourself.',
@@ -47,27 +47,35 @@ export const post21: BlogPost = {
 
       <p>
         21 is supposed to be the age where you're in college, drinking legally,
-        finding jobs. i'm doing none of those things in the traditional sense,
-        and i think that's okay.
+        finding jobs. i'm doing none of those things in the traditional sense.
+        i'm not walking across a stage to get a degree. i'm not celebrating by
+        going to bars with friends from my dorm.
       </p>
 
       <p>
-        what i am doing: i write a lot more now. i carry a notebook everywhere.
-        i read occasionally, but when i do, i read voraciously, and it changes
-        how i think. i'm more grateful for those who choose to love me, because
-        i understand now how rare that is.
-      </p>
-
-      <p>i feel solace in my decisions.</p>
-
-      <p>
-        i find joy in tackling hard problems of all sorts. dare i say i've
-        matured? i do things even when they suck. i'm more okay with conflict
-        now. i can cut people off if they harm me. i have harder conversations.
+        and i think that's okay. i used to feel like i was missing out on
+        something, like there was a version of my life where i did things the
+        "normal" way and it was better. but i don't think that way anymore. the
+        path i'm on gave me lessons and dreams i wouldn't trade for the world.
       </p>
 
       <p>
-        i still suck at giving gifts. and texting. those are on my list for 21.
+        <span className="font-medium">what i'm doing now:</span> i get to code
+        all day, and i fucking love it. teenage me could never have imagined
+        that. i write a lot more now. i carry a notebook everywhere. i read
+        occasionally, but when i do, i read voraciously, and it changes how i
+        think. i'm more grateful for those who choose to love me, because i
+        understand now how rare that is.
+      </p>
+
+      <p>
+        i find joy in tackling hard problems of all sorts. dare i say i'm...
+        stronger? i do things even when they suck. i'm more okay with conflict
+        now. i can set boundaries with people who don't respect me. i embrace tougher conversations.
+      </p>
+
+      <p>
+        i still suck at giving gifts. and texting. and i probably need to sleep more. those are on my list for 21.
       </p>
 
       <p>
@@ -78,11 +86,16 @@ export const post21: BlogPost = {
       </p>
 
       <p>
-        i'm eternally grateful for the people who supported me, the places that
-        shaped me, and the things that made me change for the better.
+        it's surreal to look back just one year ago and see how much of a
+        different person i was. i hope that keeps happening. i hope to be
+        someone who changes a lot. i'm grateful for the people who supported me,
+        the places that shaped me, and the things that pushed me to be different
+        than i was before.
       </p>
 
       <Image src={plane} alt="View from PDX to SFO" />
+
+      <p>pdx → sfo. here's to another year!</p>
     </>
   ),
 };
