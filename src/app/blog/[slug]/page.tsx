@@ -9,7 +9,7 @@ const posts: Record<
   }
 > = {
   'people-i-look-up-to': {
-    title: 'People I Look Up To',
+    title: 'People I look up to',
     date: '2025-12-17',
     content: (
       <>
