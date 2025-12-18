@@ -71,7 +71,7 @@ export default function Home() {
           href="https://x.com/aidenybai"
           className="underline decoration-stone-500 underline-offset-[2.5px] hover:decoration-stone-400"
         >
-          x (twitter)
+          X (twitter)
         </a>
         ,{' '}
         <a

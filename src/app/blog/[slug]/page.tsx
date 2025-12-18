@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
-import signature from '@/public/sig.webp';
 
 const posts: Record<
   string,
@@ -10,6 +8,372 @@ const posts: Record<
     content: React.ReactNode;
   }
 > = {
+  'people-i-look-up-to': {
+    title: 'People I Look Up To',
+    date: '2025-12-17',
+    content: (
+      <>
+        <p>
+          this list is non-exhaustive and ever growing. these are people who
+          inspire me, whose work i admire, and who i've learned from.
+        </p>
+
+        <ul className="list-disc list-inside space-y-1 mt-4">
+          <li>
+            <a
+              href="https://x.com/theo"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Theo Browne
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/zeeg"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              David Cramer
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/JohnPhamous"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              John Pham
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/RyanCarniato"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Ryan Carniato
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/thdxr"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Dax
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/snowmaker"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Jared Friedman
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/karpathy"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Andrej Karpathy
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/alistaiir"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Alistair Smith
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/itswilsonhou"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Wilson
+            </a>{' '}
+            &{' '}
+            <a
+              href="https://x.com/angehyc"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Ange
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/ScottWu46"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Scott Wu
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/dok2001"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Dane Knecht
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/jarredsumner"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Jared Sumner
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/rauchg"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Guillermo Rauch
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/amasad"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Amjad Masad
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/sama"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Sam Altman
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/Vjeux"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Vjeux (Christopher Chedeau)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/steveruizok"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Steve Ruiz
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/shl"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Sahil Lavingia
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/bentlegen"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Ben Vinegar
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/jbfja"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Jacob Jackson
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/amanrsanger"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Aman Sanger
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/ryanflorence"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Ryan Florence
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/tomocchino"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Tom Occhino
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/jordwalke"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Jordan Walke
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/youyuxi"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Evan You
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/charliermarsh"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Charlie Marsh
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/shadcn"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              shadcn
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/trueadm"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Dominic Gannaway
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/tannerlinsley"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Tanner Linsley
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/ekzhang1"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Eric Zhang
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/zachlatta"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Zach Latta
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/realGeorgeHotz"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              George Hotz
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/jwheer"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Jeffrey Heer
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/mathisonian"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Matthew Conlen
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/domoritz"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Dominik Moritz
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/willdepue"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Will Depue
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/antfu7"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Anthony Fu
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/shuding_"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Shu Ding
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/thesephist"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Linus Lee (thesephist)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/ansonyuu"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Anson Yu
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/_jzhao"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Jacky Zhao
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/mojombo"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Tom Preston-Werner
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/calebporzio"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Caleb Porzio
+            </a>
+          </li>
+        </ul>
+      </>
+    ),
+  },
   'building-fast-software': {
     title: 'Building Fast Software',
     date: '2024-01-15',
@@ -28,7 +392,7 @@ const posts: Record<
           making technology truly available to everyone.
         </p>
 
-        <p className="font-bold">performance as a feature</p>
+        <p className="font-semibold">performance as a feature</p>
         <p>
           i've always treated performance as a first-class feature. when i built{' '}
           <a
@@ -48,7 +412,7 @@ const posts: Record<
           baked into the foundation.
         </p>
 
-        <p className="font-bold">measuring what matters</p>
+        <p className="font-semibold">measuring what matters</p>
         <p>
           you can't improve what you don't measure. that's why i built{' '}
           <a
@@ -68,7 +432,7 @@ const posts: Record<
           you optimize at the end.
         </p>
 
-        <p className="font-bold">the workflow</p>
+        <p className="font-semibold">the workflow</p>
         <p>
           here's how i approach building fast software: measure first, optimize
           continuously, and never accept "good enough" when it comes to
@@ -114,7 +478,7 @@ const posts: Record<
           assistants?
         </p>
 
-        <p className="font-bold">specialization matters</p>
+        <p className="font-semibold">specialization matters</p>
         <p>
           general-purpose tools are good at many things, but great at none.
           when you specialize, you can optimize for specific workflows, common
@@ -128,7 +492,7 @@ const posts: Record<
           that treats frontend code like any other code.
         </p>
 
-        <p className="font-bold">speed in tooling</p>
+        <p className="font-semibold">speed in tooling</p>
         <p>
           the same principle that applies to software applies to tooling: speed
           matters. a coding agent that takes 30 seconds to generate code isn't
@@ -142,7 +506,7 @@ const posts: Record<
           performance of the tools themselves.
         </p>
 
-        <p className="font-bold">what's next</p>
+        <p className="font-semibold">what's next</p>
         <p>
           i think we're just scratching the surface of what's possible with
           AI-powered development tools. as these tools get faster and more
@@ -179,7 +543,7 @@ const posts: Record<
           for me, and here's why.
         </p>
 
-        <p className="font-bold">the opportunity cost</p>
+        <p className="font-semibold">the opportunity cost</p>
         <p>
           university is expensive, not just in terms of money, but in terms of
           time. four years is a long time in technology. the landscape changes
@@ -199,7 +563,7 @@ const posts: Record<
           university was the best place for me to learn.
         </p>
 
-        <p className="font-bold">learning by doing</p>
+        <p className="font-semibold">learning by doing</p>
         <p>
           i've always learned best by building. when you're building real
           products, you face real problems. you learn to solve them, and that
@@ -213,7 +577,7 @@ const posts: Record<
           something that matters.
         </p>
 
-        <p className="font-bold">it's not for everyone</p>
+        <p className="font-semibold">it's not for everyone</p>
         <p>
           dropping out isn't the right choice for everyone. university provides
           structure, community, and a different kind of learning. but for me,
@@ -252,7 +616,7 @@ const posts: Record<
           effectively. that's not accessibility—that's exclusion.
         </p>
 
-        <p className="font-bold">performance as inclusion</p>
+        <p className="font-semibold">performance as inclusion</p>
         <p>
           i've always believed that performance is a form of accessibility. when
           you make software fast, you make it available to more people. you
@@ -265,7 +629,7 @@ const posts: Record<
           available to everyone, regardless of their circumstances.
         </p>
 
-        <p className="font-bold">the global perspective</p>
+        <p className="font-semibold">the global perspective</p>
         <p>
           not everyone has access to the latest iPhone or gigabit internet. in
           many parts of the world, people are using older devices on slower
@@ -279,7 +643,7 @@ const posts: Record<
           from the start—not as an afterthought.
         </p>
 
-        <p className="font-bold">building for everyone</p>
+        <p className="font-semibold">building for everyone</p>
         <p>
           when i build software, i think about the person using a three-year-old
           phone on a 3G connection. if it works well for them, it'll work
@@ -321,7 +685,7 @@ export default async function BlogPost({
   if (!post) {
     return (
       <main className="flex flex-col gap-2 max-w-[600px] px-10 py-10 leading-relaxed text-base">
-        <h1 className="text-lg font-bold">Post not found</h1>
+        <h1 className="text-lg font-semibold">Post not found</h1>
         <p>
           <Link
             href="/blog"
@@ -345,47 +709,10 @@ export default async function BlogPost({
         </Link>
       </p>
 
-      <h1 className="text-lg font-bold mt-4">{post.title}</h1>
+      <h1 className="text-lg font-semibold mt-4">{post.title}</h1>
       <p className="text-sm text-neutral-600">{post.date}</p>
 
       <div className="flex flex-col gap-2 mt-4">{post.content}</div>
-
-      <div className="border-l border-neutral-900 pl-3 mt-8">
-        <p>
-          connect with me on{' '}
-          <a
-            href="https://x.com/aidenybai"
-            className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
-          >
-            twitter
-          </a>
-          ,{' '}
-          <a
-            href="https://github.com/aidenybai"
-            className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
-          >
-            github
-          </a>
-          ,{' '}
-          <a
-            href="https://www.linkedin.com/in/aidenybai/"
-            className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
-          >
-            linkedin
-          </a>
-          , or at{' '}
-          <a
-            href="mailto:aiden@million.dev"
-            className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
-          >
-            aiden@million.dev
-          </a>
-          !
-        </p>
-      </div>
-      <p className="flex justify-start w-full mt-8">
-        <Image src={signature} alt="Aiden Bai" className="w-48" />
-      </p>
     </main>
   );
 }

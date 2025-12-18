@@ -3,6 +3,12 @@ import IconArrowTopRight from '../../components/icon-arrow-top-right';
 
 const posts = [
   {
+    url: '/blog/people-i-look-up-to',
+    title: 'People I look up to',
+    date: '2025-12-17',
+    external: false,
+  },
+  {
     url: 'https://www.react-grab.com/blog/bets',
     title: 'Some bets',
     date: '2025-11-29',
@@ -48,7 +54,7 @@ export default function Blog() {
         </Link>
       </p>
 
-      <h1 className="text-lg font-bold mt-4">Blog</h1>
+      <h1 className="text-lg font-semibold mt-4">Blog</h1>
 
       <div className="flex flex-col mt-6 gap-3">
         {years.map((year) => (
@@ -65,15 +71,24 @@ export default function Blog() {
                 ) : (
                   <span className="text-neutral-500 text-sm min-w-12" />
                 )}
-                <a
-                  href={post.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
-                >
-                  {post.title}
-                  <IconArrowTopRight className="w-3 h-3 inline-block ml-1 align-baseline" />
-                </a>
+                {post.external ? (
+                  <a
+                    href={post.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+                  >
+                    {post.title}
+                    <IconArrowTopRight className="w-3 h-3 inline-block ml-1 align-baseline" />
+                  </a>
+                ) : (
+                  <Link
+                    href={post.url}
+                    className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+                  >
+                    {post.title}
+                  </Link>
+                )}
               </div>
             ))}
           </div>
