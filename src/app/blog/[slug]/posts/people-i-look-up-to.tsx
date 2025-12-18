@@ -45,7 +45,7 @@ const people = [
   { name: 'Dominik Moritz', href: 'https://x.com/domoritz' },
   { name: 'Will Depue', href: 'https://x.com/willdepue' },
   { name: 'Anthony Fu', href: 'https://x.com/antfu7' },
-  { name: 'Shu Ding', href: 'https://x.com/shuding_' },
+  { name: 'Shu Ding', href: 'https://x.com/shuding' },
   { name: 'Linus Lee (thesephist)', href: 'https://x.com/thesephist' },
   { name: 'Anson Yu', href: 'https://x.com/ansonyuu' },
   { name: 'Jacky Zhao', href: 'https://x.com/_jzhao' },
