@@ -52,7 +52,7 @@ export default function PastSection() {
           </p>
 
           <p>
-            along the way, i've worked (and shut down) on projects like{' '}
+            along the way, i've worked on (and shut down) on projects like{' '}
             <a
               className="underline decoration-stone-500 underline-offset-[2.5px] hover:decoration-stone-400"
               href="https://x.com/aidenybai/status/1899840110449111416?s=20"

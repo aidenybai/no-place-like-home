@@ -1,5 +1,14 @@
 @import 'tailwindcss';
 
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
 ::selection {
   background-color: #000000;
   color: #fff;
@@ -37,4 +46,26 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shimmer 3s linear infinite;
+}
+
+.sonic-shimmer {
+  animation: sonic-shimmer 0.8s linear infinite;
+}
+
+@keyframes sonic-shimmer {
+  0% {
+    filter: brightness(1) contrast(1);
+  }
+  40% {
+    filter: brightness(1) contrast(1);
+  }
+  50% {
+    filter: brightness(1.4) contrast(1.1);
+  }
+  60% {
+    filter: brightness(1) contrast(1);
+  }
+  100% {
+    filter: brightness(1) contrast(1);
+  }
 }

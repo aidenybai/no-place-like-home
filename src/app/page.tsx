@@ -5,6 +5,7 @@ import IconArrowTopRight from '@/components/icon-arrow-top-right';
 import PastSection from '@/components/past-section';
 import PolaroidStack from '@/components/polaroid-stack';
 import AmiTooltip from '@/components/ami-tooltip';
+import SpeedText from '@/components/speed-text';
 
 export default function Home() {
   return (
@@ -30,10 +31,9 @@ export default function Home() {
       </p>
 
       <p>
-        i care a great deal about{' '}
-        <span className="shimmer font-medium">speed</span>. in order to allow
-        anyone to access great technology, you need to make it fast. most of my
-        work (old and new) revolves around this.
+        i care a great deal about <SpeedText />. in order to allow anyone to
+        access great technology, you need to make it fast. most of my work (old
+        and new) revolves around this.
       </p>
 
       <p>
