@@ -1,15 +1,17 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { post21 } from './posts/21';
 import { peopleILookUpTo } from './posts/people-i-look-up-to';
 
-const posts: Record<
-  string,
-  {
-    title: string;
-    date: string;
-    content: React.ReactNode;
-  }
-> = {
+export type BlogPost = {
+  title: string;
+  date: string;
+  description?: string;
+  ogImage?: string;
+  content: React.ReactNode;
+};
+
+const posts: Record<string, BlogPost> = {
   '21': post21,
   'people-i-look-up-to': peopleILookUpTo,
 };
@@ -18,6 +20,51 @@ export async function generateStaticParams() {
   return Object.keys(posts).map((slug) => ({
     slug,
   }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const resolvedParams = await params;
+  const post = posts[resolvedParams.slug];
+
+  if (!post) {
+    return {
+      title: 'Post not found | Aiden Bai',
+    };
+  }
+
+  const title = `${post.title} | Aiden Bai`;
+  const description = post.description || `${post.title} - A blog post by Aiden Bai`;
+  const ogImage = post.ogImage || '/aiden-logo.webp';
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title: post.title,
+      description,
+      type: 'article',
+      publishedTime: post.date,
+      authors: ['Aiden Bai'],
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: post.ogImage ? 'summary_large_image' : 'summary',
+      title: post.title,
+      description,
+      images: [ogImage],
+    },
+  };
 }
 
 export default async function BlogPost({

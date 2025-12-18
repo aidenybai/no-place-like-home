@@ -1,3 +1,5 @@
+import type { BlogPost } from '../page';
+
 const linkClass =
   'underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400';
 
@@ -51,9 +53,10 @@ const people = [
   { name: 'Caleb Porzio', href: 'https://x.com/calebporzio' },
 ];
 
-export const peopleILookUpTo = {
+export const peopleILookUpTo: BlogPost = {
   title: 'People I look up to',
   date: '2025-12-17',
+  description: 'A growing list of people who inspire me and whose work I admire.',
   content: (
     <>
       <p>

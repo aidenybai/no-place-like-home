@@ -1,9 +1,13 @@
 import Image from 'next/image';
 import plane from '@/public/plane.webp';
+import type { BlogPost } from '../page';
 
-export const post21 = {
+export const post21: BlogPost = {
   title: 'Reflecting on 20',
   date: '2026-01-05',
+  description:
+    'Reflections on turning 21, identity beyond age, and growing into yourself.',
+  ogImage: '/plane.webp',
   content: (
     <>
       <p>
