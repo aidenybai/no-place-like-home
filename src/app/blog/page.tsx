@@ -4,7 +4,7 @@ import IconArrowTopRight from '../../components/icon-arrow-top-right';
 const posts = [
   {
     url: '/blog/21',
-    title: 'Reflecting on 20',
+    title: 'Goodbye 20',
     date: '2026-01-05',
     external: false,
   },
@@ -103,5 +103,3 @@ export default function Blog() {
     </main>
   );
 }
-
-
