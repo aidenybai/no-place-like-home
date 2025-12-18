@@ -52,12 +52,19 @@ export default function PolaroidStack() {
   const [hoveredPolaroid, setHoveredPolaroid] = useState<number | null>(null);
   const [isMobile, setIsMobile] = useState(false);
   const [polaroids, setPolaroids] = useState<typeof allPolaroids | null>(null);
+  const [animatedIn, setAnimatedIn] = useState(false);
 
   useEffect(() => {
     const shuffled = shuffleArray(allPolaroids);
     const mobile = window.innerWidth < 768;
     setIsMobile(mobile);
     setPolaroids(mobile ? shuffled.slice(0, 4) : shuffled.slice(0, 11));
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        setAnimatedIn(true);
+      });
+    });
 
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
     window.addEventListener('resize', checkMobile);
@@ -76,7 +83,7 @@ export default function PolaroidStack() {
         {polaroids.map((polaroid, index) => (
           <Tooltip.Root key={polaroid.alt}>
             <Tooltip.Trigger
-              className="absolute cursor-pointer transition-all duration-300 ease-out origin-bottom"
+              className="absolute cursor-pointer transition-all duration-300 ease-out origin-center"
               style={{
                 left: index * spacing,
                 top: 0,
@@ -84,7 +91,7 @@ export default function PolaroidStack() {
                   hoveredPolaroid === index ? -16 : polaroid.offsetY
                 }px) rotate(${
                   hoveredPolaroid === index ? 0 : polaroid.rotation
-                }deg) scale(${hoveredPolaroid === index ? 1.15 : 1})`,
+                }deg) scale(${!animatedIn ? 0.5 : hoveredPolaroid === index ? 1.15 : 1})`,
                 zIndex: hoveredPolaroid === index ? 10 : index,
               }}
               onMouseEnter={() => setHoveredPolaroid(index)}
