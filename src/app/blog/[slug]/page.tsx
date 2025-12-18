@@ -85,17 +85,17 @@ const posts: Record<
           </li>
           <li>
             <a
-              href="https://x.com/itswilsonhou"
-              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
-            >
-              Wilson
-            </a>{' '}
-            &{' '}
-            <a
               href="https://x.com/angehyc"
               className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
             >
               Ange
+            </a>{' '}
+            &{' '}
+            <a
+              href="https://x.com/itswilsonhou"
+              className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
+            >
+              Wilson
             </a>
           </li>
           <li>
