@@ -120,3 +120,4 @@ export default function PolaroidStack() {
     </Tooltip.Provider>
   );
 }
+

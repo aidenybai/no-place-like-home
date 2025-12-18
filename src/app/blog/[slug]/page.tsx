@@ -716,3 +716,4 @@ export default async function BlogPost({
     </main>
   );
 }
+
