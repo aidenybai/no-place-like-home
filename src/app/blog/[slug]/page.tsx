@@ -119,7 +119,7 @@ const posts: Record<
               href="https://x.com/jarredsumner"
               className="underline decoration-neutral-500 underline-offset-[2.5px] hover:decoration-neutral-400"
             >
-              Jared Sumner
+              Jarred Sumner
             </a>
           </li>
           <li>
@@ -716,4 +716,3 @@ export default async function BlogPost({
     </main>
   );
 }
-
