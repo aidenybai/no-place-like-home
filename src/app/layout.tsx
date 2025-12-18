@@ -45,10 +45,10 @@ export default function RootLayout({
           crossOrigin="anonymous"
           strategy="beforeInteractive"
         />
-            <Script
-              src="//unpkg.com/@react-grab/visual-edit/dist/client.global.js"
-              strategy="lazyOnload"
-            />
+        <Script
+          src="//unpkg.com/@react-grab/visual-edit/dist/client.global.js"
+          strategy="lazyOnload"
+        />
       </head>
       <body className={`${geistMono.className} antialiased tracking-tighter`}>
         {children}

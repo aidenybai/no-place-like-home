@@ -88,3 +88,4 @@ export const peopleILookUpTo: BlogPost = {
     </>
   ),
 };
+
