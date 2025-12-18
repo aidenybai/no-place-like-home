@@ -17,9 +17,23 @@ export const post21 = {
 
       <p>
         for most of my life, my age has been deeply tied to my identity. when i
-        started my company with fireship, when i built million.js at 16, when i
-        dropped out, i was always "the young person who did X." my age was part
-        of the pitch, part of the brand, part of how i understood myself.
+        started my company with{' '}
+        <a
+          href="https://www.youtube.com/watch?v=VkezQMb1DHw"
+          className="underline decoration-stone-500 underline-offset-[2.5px] hover:decoration-stone-400"
+        >
+          fireship
+        </a>
+        , when i built{' '}
+        <a
+          href="https://github.com/aidenybai/million"
+          className="underline decoration-stone-500 underline-offset-[2.5px] hover:decoration-stone-400"
+        >
+          million.js
+        </a>{' '}
+        at 16, when i dropped out, i was always "the young person who did X." my
+        age was part of the pitch, part of the brand, part of how i understood
+        myself.
       </p>
 
       <p>

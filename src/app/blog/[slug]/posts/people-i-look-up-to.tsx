@@ -57,7 +57,7 @@ export const peopleILookUpTo = {
   content: (
     <>
       <p>
-        this list is non-exhaustive and ever growing. these are people who
+        this list is non-exhaustive, unordered, and ever growing. these are people who
         inspire me, whose work i admire, and who i've learned from.
       </p>
 
