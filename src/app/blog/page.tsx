@@ -3,6 +3,12 @@ import IconArrowTopRight from '../../components/icon-arrow-top-right';
 
 const posts = [
   {
+    url: '/blog/21',
+    title: 'Reflecting on 20',
+    date: '2026-01-05',
+    external: false,
+  },
+  {
     url: '/blog/people-i-look-up-to',
     title: 'People I look up to',
     date: '2025-12-17',
@@ -97,5 +103,3 @@ export default function Blog() {
     </main>
   );
 }
-
-
