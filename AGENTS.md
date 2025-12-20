@@ -132,3 +132,22 @@ Concise rules for building accessible, fast, delightful UIs Use MUST/SHOULD/NEVE
 - MUST: Increase contrast on `:hover/:active/:focus`
 - SHOULD: Match browser UI to bg
 - SHOULD: Avoid gradient banding (use masks when needed)
+
+## Copywriting
+
+- MUST: Use active voice.
+- MUST: Use title case for headings and buttons.
+- MUST: Be clear and concise. Use as few words as possible.
+- MUST: Prefer & over and.
+- MUST: Use action-oriented language.
+- MUST: Keep nouns consistent. Introduce as few unique terms as possible.
+- MUST: Write in second person. Avoid first person.
+- MUST: Use consistent placeholders.
+- MUST: Use numerals for counts.
+- MUST: Use consistent currency formatting.
+- MUST: Separate numbers & units with a space.
+- MUST: Use a non-breaking space e.g., 10&nbsp;MB.
+- MUST: Default to positive language. Frame messages in an encouraging, problem-solving way, even for errors.
+- MUST: Error messages guide the exit. Don't just state what went wrong—tell the user how to fix it.
+- MUST: Avoid ambiguity. Labels are clear & specific.
+- MUST: Instead of the button label "Continue", say "Save API Key".
